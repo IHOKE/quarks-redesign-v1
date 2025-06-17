@@ -1,5 +1,5 @@
-<!DOCTYPE = html>
-<html lang="zh-HK">
+<!DOCTYPE html>
+<html lang="en-US">
 	<head>
 		<meta charset="UTF-8">
 		<title>跨青時刻 Quarks</title>
@@ -20,39 +20,74 @@
 		<!-- CSS Stylesheets -->
 		<link rel="stylesheet" href="/en/en-styles/en-common.css">
 		<link rel="stylesheet" href="/en/en-styles/en-index.css">
-
-		<!-- Redirects user to English Version -->
-
-		<!-- <script aync>
-			const userLang = navigator.language || navigator.userLanguage;
-			if (userLang.includes('zh')) {
-			window.location.href = '/zh/';
-			} else {
-			window.location.href = '/en/';
-			}
-		</script> -->
 		
 	</head>
 
-	<body>
-		<nav class="nav-main b-sol">
+	<body class="lang-en">
 
-			<div class="nav-m-brand b-sol">
-				<a href="/en/index.html" class="nav-m-brand">
-					<img src="/cm-images/brand.svg" alt="Quarks Logo">
+		<!-- Main Nav -->
+		<nav class="nav-main">
+			<div class="nav-m-brand">
+				<a href="/en/index.html">
+					<img src="/cm-images/brand.svg" alt="Quarks Logo" loading="lazy">
 				</a>
 			</div>
 				
 			<ul class="nav-m-links">
-				<li><a href="/en//en-subpages/about/about.html">About Us</a></li>
-				<li><a href="/en/en-subpages/student/student.hmtl">Students</a></li>
-				<li><a href="/en/en-subpages/healthcare/healthcare.html">Healthcare</a></li>
-				<li><a href="/en/en-subpages/law/law.html">Laws</a></li>
+				<a href="/en//en-subpages/about/about.html"><li>About <span>Us</span></li></a>
+				<a href="/en/en-subpages/student/student.hmtl"><li>Students</li></a>
+				<a href="/en/en-subpages/healthcare/healthcare.html"><li>Healthcare</li></a>
+				<a href="/en/en-subpages/law/law.html"><li>Laws</li></a>
 			</ul>
 
+			<div class="nav-m-misc">
+				<div class="button-lang"><a href="/zh/index.html">中</a></div>
+				<button class="button-side" onclick="toggleNavSide()">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
 		</nav>
 
+		<!-- Side Nav -->
 		<nav class="nav-side">
+			<div class="nav-s-brand">
+				<a href="/en/index.html">
+					<img src="/cm-images/brand.svg" alt="Quarks Logo" loading="lazy">
+				</a>
+			</div>
+
+			<div class="nav-s-close">
+				<div class="button-lang"><a href="/zh/index.html">中</a></div>
+				<button class="button-side" onclick="toggleNavSide()">
+					<span></span><span></span>
+				</button>
+			</div>
+
+			<ul class="nav-s-links">
+				<a href="/en/en-subpages/about/about.html"><li>About Us</li></a>
+				<a href="/en/en-subpages/student/student.hmtl"><li>Students</li></a>
+				<a href="/en/en-subpages/healthcare/healthcare.html"><li>Healthcare</li></a>
+				<a href="/en/en-subpages/law/law.html"><li>Laws</li></a>
+			</ul>
+
+
 		</nav>
+
+		<!-- NavSide Script -->
+		<script defer>
+			function toggleNavSide() {
+				document.querySelector('.button-side').classList.toggle('active');
+				document.querySelector('.nav-side').classList.toggle('active');
+			}
+		</script>
+
+		<section style="height:10000px" class="section-header">
+			<div class="section-header">
+				<h1>跨青時刻 Quarks</h1>
+				<p>跨青時刻是一個由香港跨性別青年領導的社區組織!致力於提升跨性別青年的權益和福祉。</p>
+			</div>
+		</section>
+
+
 	</body>
 </html>
