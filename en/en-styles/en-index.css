@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+header {
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+}
+
+.header-row:nth-child(1) {
+	display: flex;
+	flex-direction: row;
+
+	/* @media screen and (max-width: 900px) {
+		flex-direction: column;
+	} */
+
+	.header-img{
+		height: 400px;
+		padding: 50px 50px 0 ;
+		width: 50%;
+		filter:drop-shadow(0 0 10px var(--col-beige-white));
+		img{
+			border-radius: min(5vw, 40px) min(5vw, 40px) 0 0 ;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.header-desc{
+		padding: 125px 5vw 0 0;
+		display: flex;
+		width: 50%;
+		flex-direction: column;
+		color: var(--col-choc-brown);
+
+		p, h1 {
+			font-size: 30px;
+			font-weight: 600;
+			line-height: 01.1;
+		}
+
+		h1{
+			border-bottom: 4px solid;
+			padding: 0 0 15px 0;
+			margin: 0 0 10px 0;
+		}
+
+		h2{
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 1.25;
+		}
+
+		a {
+			color: var(--col-choc-brown);
+			background-color: var(--col-beige-white);
+			text-align: center;
+			text-decoration: none;
+			width: 80%;
+			max-width: 250px;
+			margin: 20px 0 0 0;
+			padding: 10px 20px;
+			border-radius: 100px;
+			font-weight: 600;
+			font-size: 20px;
+		}
+
+		a:hover{
+			background-color: var(--col-hot-pink);
+			color: var(--col-beige-white);
+		}
+	}
+}
+
+.header-row:nth-child(2) {
+	z-index: -1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 80px;
+	position: absolute;
+	translate: 0 -80px;
+	background-color: var(--col-beige-white);
+}
+
+.section-about{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	background-color: var(--col-beige-white);
+	.section-base {width: 80%;}
+}
+
+.about-intro{
+	color: var(--col-choc-brown);
+	border-top: solid 2.5px; border-bottom: solid 2.5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+	img {
+		margin: 10px 0;
+		height: 40px;
+	}
+
+	p, h2 {
+		display: inline;
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+.about-fields-c{
+	padding: 80px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 50px;
+	align-items: flex-start;
+
+	.about-fields {
+		width: 280px;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+
+		img {
+			width: 30%;
+			margin-right: 20px;
+		}
+
+		.a-fields-desc {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			text-align: justify;
+			h3 {
+				padding: 0 0 5px 0;
+				margin: 0 0 5px 0;
+				border-bottom: solid;
+			}
+		}
+	}
+
+}
