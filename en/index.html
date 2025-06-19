@@ -8,9 +8,9 @@
 		<meta name="description" content="跨青時刻是一個由香港跨性別青年領導的社區組織!致力於提升跨性別青年的權益和福祉。Quarks is a Hong Kong transgender leaded community for transgender youths!">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="alternate" hreflang="en-US" href="/en/index.html"/>
-		<link rel="alternate" hreflang="zh-HK" href="/zh/index.html"/>
-		<link rel="alternate" hreflang="x-default" href="/index.html" />
+		<link rel="alternate" hreflang="en-US" href="{{site.baseurl}}/en/index.html"/>
+		<link rel="alternate" hreflang="zh-HK" href="{{site.baseurl}}/zh/index.html"/>
+		<link rel="alternate" hreflang="x-default" href="{{site.baseurl}}/index.html" />
 
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -29,6 +29,21 @@
 		<!-- CSS Stylesheets -->
 		<link rel="stylesheet" href="{{site.baseurl}}/en/en-styles/en-common.css">
 		<link rel="stylesheet" href="{{site.baseurl}}/en/en-styles/en-index.css">
+
+		<style>
+			@font-face { font-family: 'Gadugi';
+				src: url('{{site.baseurl}}/fonts/gadugi.ttf') format('truetype');
+			}
+
+			@font-face { font-family: 'Gadugi Bold';
+				src: url('{{site.baseurl}}/fonts/gadugib.ttf') format('truetype');
+				font-weight: bold;
+			}
+
+			@font-face { font-family: "Mochipy";
+				src: url("{{site.baseurl}}/fonts/MOCHIYPOPONE-REGULAR.TTF") format("truetype");
+			}
+		</style>
 	</head>
 
 	<body class="lang-en">
@@ -37,52 +52,7 @@
 		<script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
-		<!-- Main Nav -->
-		<nav class="nav-main font-outfit">
-			<div class="nav-m-brand">
-				<a href="/en/index.html">
-					<img src="/cm-images/brand.svg" alt="Quarks Logo" loading="lazy">
-				</a>
-			</div>
-				
-			<ul class="nav-m-links">
-				<a href="/en//en-subpages/about/about.html"><li>About <span>Us</span></li></a>
-				<a href="/en/en-subpages/student/student.hmtl"><li>Students</li></a>
-				<a href="/en/en-subpages/healthcare/healthcare.html"><li>Healthcare</li></a>
-				<a href="/en/en-subpages/law/law.html"><li>Laws</li></a>
-			</ul>
-
-			<div class="nav-m-misc">
-				<div class="button-lang"><a href="/zh/index.html">中</a></div>
-				<button class="button-side" onclick="toggleNavSide()">
-					<span></span><span></span><span></span>
-				</button>
-			</div>
-		</nav>
-
-		<!-- Side Nav -->
-		<nav class="nav-side font-outfit">
-			<div class="nav-s-brand">
-				<a href="/en/index.html">
-					<img src="/cm-images/brand.svg" alt="Quarks Logo" loading="lazy">
-				</a>
-			</div>
-
-			<div class="nav-s-close">
-				<div class="button-lang"><a href="/zh/index.html">中</a></div>
-				<button class="button-side" onclick="toggleNavSide()">
-					<span></span><span></span>
-				</button>
-			</div>
-
-			<ul class="nav-s-links">
-				<a href="/en/en-subpages/about/about.html"><li>About Us</li></a>
-				<a href="/en/en-subpages/student/student.hmtl"><li>Students</li></a>
-				<a href="/en/en-subpages/healthcare/healthcare.html"><li>Healthcare</li></a>
-				<a href="/en/en-subpages/law/law.html"><li>Laws</li></a>
-			</ul>
-
-		</nav>
+		{%include en-navbar.html%}
 
 		<!-- NavSide Script -->
 		<script defer>
@@ -96,14 +66,14 @@
 				<div class="section-base">
 					<div class="header-row">
 						<div class="header-img">
-							<img src="/cm-images/placeholder.svg" loading="lazy">
+							<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
 						</div>
 
 						<div class="header-desc font-mochipy">
 							<p>Hello!</p>
 							<h1>We are Quarks!</h1>
 							<h2 class="font-noto">A transgender community<br>located in Hong Kong!</h2>
-							<a href="/en/en-subpages/about/about.html" class="font-outfit">What is Transgender?</a>
+							<a href="{{site.baseurl}}/en/en-subpages/about/about.html" class="font-outfit">What is Transgender?</a>
 						</div>
 					</div>
 				</div>
@@ -119,34 +89,39 @@
 
 		<section class="section-about">
 			<div class="about-intro">
-				<img src="/cm-images/divider-1.svg" loading="lazy">
+				{%include divider-1.html%}
 				<div class="font-outfit"><p>Here at Quarks, </p><h2>Our mission</h2><p> is to...</p></div>
-				<img src="/cm-images/divider-1.svg" loading="lazy">
+				{%include divider-1.html%}
 			</div>
-			<div class="section-base b-sol">
+			<div class="section-base">
 
-				<div class="about-fields-c b-sol">
-
+				<div class="about-fields-c">
 					<div class="about-fields">
-						<img src="/cm-images/placeholder.svg" loading="lazy" width="50">
+						<div class="about-img">
+							{%include icon-connect.html%}
+						</div>
 						<div class="a-fields-desc">
-							<h3>Field Title</h3>
+							<h3 class="font-outfit">Connect with the Community</h3>
 							<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
 						</div>
 					</div>
 
 					<div class="about-fields">
-						<img src="/cm-images/placeholder.svg" loading="lazy" width="50">
+						<div class="about-img">
+							{%include icon-visibility.html%}
+						</div>
 						<div class="a-fields-desc">
-							<h3>Field Title</h3>
+							<h3 class="font-outfit">Promote Visibility</h3>
 							<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
 						</div>
 					</div>
 
 					<div class="about-fields">
-						<img src="/cm-images/placeholder.svg" loading="lazy" width="50">
+						<div class="about-img">
+							{%include icon-resource.html%}
+						</div>
 						<div class="a-fields-desc">
-							<h3>Field Title</h3>
+							<h3 class="font-outfit">Provide Resources</h3>
 							<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
 						</div>
 					</div>
@@ -159,8 +134,45 @@
 
 				</div>
 			</div>
+
+			<div class="about-plaforms">
+				<div class="a-platforms-header">
+					<h2 class="font-outfit">Follow Us!</h2>
+				</div>
+
+				<div class="a-platforms-desc">
+					<a href="https://www.instagram.com/quarkshk/">
+						{%include icon-instagram.html%}
+					</a>
+
+					<a href="https://www.youtube.com/@quarkshk">
+						{%include icon-youtube.html%}
+					</a>
+
+					<a href="https://www.facebook.com/quarkshk/?locale=zh_HK">
+						{%include icon-facebook.html%}
+					</a>
+				</div>
+			</div>
 		</section>
 
-		{%include footer.html%}
+		<section class="section-news">
+			<div class="news-intro">
+				<h2 class="font-outfit">News</h2>
+				<p>Lorem Ipsum placeholder text</p>
+			</div>
+			<div class="news-main">
+				<div class="news-info">
+					<h3>News #1</h3>
+					<div class="news-det">
+						<p>Date</p>
+						<p>Venue</p>
+						<p>Time</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{%include en-footer.html%}
 	</body>
 </html>

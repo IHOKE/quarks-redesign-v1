@@ -10,19 +10,6 @@
 	--col-hot-pink: #FF6677;
 }
 
-@font-face { font-family: 'Gadugi';
-	src: url('/fonts/gadugi.ttf') format('truetype');
-}
-
-@font-face { font-family: 'Gadugi Bold';
-	src: url('/fonts/gadugib.ttf') format('truetype');
-	font-weight: bold;
-}
-
-@font-face { font-family: "Mochipy";
-	src: url("/fonts/MOCHIYPOPONE-REGULAR.TTF") format("truetype");
-}
-
 .font-mochipy {
 	font-family: "Mochipy", sans-serif;
 }
@@ -111,6 +98,8 @@ body{
 	top: 0;
 	width: 100vw;
 	z-index: 1000;
+	font-weight: 1000;
+	font-family: "Outfit", sans-serif;
 
 	.nav-main.min{ height: 60px; }
 
@@ -150,8 +139,6 @@ body{
 			border-radius: 20px;
 			text-decoration: none;
 			color: var(--col-beige-white);
-			font-family: "Gadugi", sans-serif;
-			font-weight: 1000;
 			margin: 0 20px 0 0;
 		}
 
