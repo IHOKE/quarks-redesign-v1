@@ -264,6 +264,7 @@ header {
 .section-news{
 	color: var(--col-choc-brown);
 	background-color: var(--col-beige-white);
+	overflow-x: hidden;
 
 	.news-intro {
 		display: flex;
@@ -356,8 +357,19 @@ header {
 		background-color: var(--col-beige-white);
 	}
 
+	.quote-divider {
+		background-color: var(--col-hot-pink);
+	}
+
 	.quote-right{
 		color: var(--col-beige-white);
 		background-color: var(--col-choc-brown);
+		fill: var(--col-beige-white);
+
+		a:hover{
+			svg{
+				fill:var(--col-hot-pink);
+			}
+		}
 	}
 }
