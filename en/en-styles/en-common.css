@@ -22,6 +22,10 @@
 	font-family: "Outfit", sans-serif;
 }
 
+.font-sitka {
+	font-family: "Sitka", "serif";
+}
+
 .lang-en{
 	font-family: "Gadugi", sans-serif;
 	letter-spacing: 0.05em;
@@ -323,4 +327,47 @@ body{
 
 .b-sol {
 	border: solid red;
+}
+
+.section-quote {
+	--quote-header-fsize: 120px;
+
+	display: flex;
+	h4 {
+		font-size: var(--quote-header-fsize);
+	}
+
+	p {
+		position: relative;
+		top: calc(var(--quote-header-fsize) * -0.25);
+		left: calc(var(--quote-header-fsize) * 0.69);
+		font-size: calc(var(--quote-header-fsize)/ 4);
+		font-weight: 800;
+	}
+}
+
+.transflag {
+	position: relative;
+	top: calc(var(--quote-header-fsize) * -0.28);
+	left: calc(var(--quote-header-fsize) * 0.69);
+	display: flex;
+	flex-direction: row;
+
+	span {
+		display: block;
+		height: calc(var(--quote-header-fsize) * 0.08);
+		width: calc(var(--quote-header-fsize) * 0.5);
+	}
+	
+	span:nth-child(1), span:nth-last-child(1) {
+		background-color: #5bcefa;
+	}
+
+	span:nth-child(2), span:nth-last-child(2) {
+		background-color: #f5a9b8;
+	}
+
+	span:nth-child(3) {
+		background-color: #ffffff;
+	}
 }

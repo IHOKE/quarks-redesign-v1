@@ -43,6 +43,10 @@
 			@font-face { font-family: "Mochipy";
 				src: url("{{site.baseurl}}/fonts/MOCHIYPOPONE-REGULAR.TTF") format("truetype");
 			}
+
+			@font-face {font-family: 'Sitka';
+				src: url("{{site.baseurl}}/fonts/SITKAVF.TTF") format("truetype");
+			}
 		</style>
 	</head>
 
@@ -63,27 +67,34 @@
 		</script>
 
 		<header class="section-header">
-				<div class="section-base">
-					<div class="header-row">
-						<div class="header-img">
-							<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
-						</div>
 
-						<div class="header-desc font-mochipy">
+			<div class="section-base">
+
+				<div class="header-row-1">
+
+					<div class="header-img">
+						<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+					</div>
+
+					<div class="header-desc font-mochipy">
+						<div class="header-desc-col">
 							<p>Hello!</p>
 							<h1>We are Quarks!</h1>
 							<h2 class="font-noto">A transgender community<br>located in Hong Kong!</h2>
-							<a href="{{site.baseurl}}/en/en-subpages/about/about.html" class="font-outfit">What is Transgender?</a>
 						</div>
+						<a href="{{site.baseurl}}/en/en-subpages/about/about.html" class="font-outfit break-letter header-btn-desktop">What is Transgender? </a>
+						<a href="{{site.baseurl}}/en/en-subpages/about/about.html" class="font-outfit break-letter header-btn-mobile">Transgender? </a>
 					</div>
+
 				</div>
+
+			</div>
 				
-			<div class="header-row loop-h">
-				<div class="loop-h-child">Something1</div>
-				<div class="loop-h-child">Something1</div>
-				<div class="loop-h-child">Something1</div>
-				<div class="loop-h-child">Something1</div>
-				<div class="loop-h-child">Something1</div>
+			<div class="header-row-2 loop-h">
+				<div class="loop-h-child">Gender Empowerment</div>
+				<div class="loop-h-child">TG Resource Center</div>
+				<div class="loop-h-child">Asso for TG Rights</div>
+				<div class="loop-h-child">Transgender Equality HK</div>
 			</div>
 		</header>
 
@@ -126,12 +137,6 @@
 						</div>
 					</div>
 
-					<script defer>
-						document.querySelectorAll('.break-letter').forEach(function(el) {
-						el.innerHTML = el.textContent.replace(/(\w{3})/g, '$1&shy;');
-						});
-					</script>
-
 				</div>
 			</div>
 
@@ -156,23 +161,65 @@
 			</div>
 		</section>
 
-		<section class="section-news">
+		<section class="section-news section-base">
 			<div class="news-intro">
 				<h2 class="font-outfit">News</h2>
 				<p>Lorem Ipsum placeholder text</p>
 			</div>
+
 			<div class="news-main">
-				<div class="news-info">
-					<h3>News #1</h3>
-					<div class="news-det">
-						<p>Date</p>
-						<p>Venue</p>
-						<p>Time</p>
+				<div class="news-det font-outfit">
+					<h3 class="news-det-header">News #1</h3>
+					<p class="n-det-ent">
+						<span class="n-det-left">Date</span>
+						<span class="n-det-right">YYYY/MM/DD</span>
+					</p>
+
+					<p class="n-det-ent">
+						<span class="n-det-left">Venue</span>
+						<span class="n-det-right">Place</span>
+					</p>
+
+					<p class="n-det-ent">
+						<span class="n-det-left">Time</span>
+						<span class="n-det-right">--:--</span>
+					</p>
+
+					{%include divider-1.html%}
+
+					<p class="n-det-content">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.
+					</p>
+
+					{%include divider-1.html%}
+				</div>
+
+				<div class="news-gallery">
+					<div class="n-gallery-img">
+						<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+						<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+						<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+					</div>
+
+					<div class="n-gallery-selector">
+						<button>&#12296;</button>
+						<h6>Event 1/n</h6>
+						<p>Click to preview the images</p>
+						<button>&#12297;</button>
 					</div>
 				</div>
 			</div>
+
 		</section>
 
+		{%include en-quote.html%}
+
 		{%include en-footer.html%}
+
+		<script defer>
+			document.querySelectorAll('.break-letter').forEach(function(el) {
+			el.innerHTML = el.textContent.replace(/(\w{3})/g, '$1&shy;');
+			});
+		</script>
 	</body>
 </html>
