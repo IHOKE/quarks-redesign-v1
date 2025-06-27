@@ -50,6 +50,7 @@
 		<!-- CDN -->
 		<script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
 
 		{%include en-navbar.html%}
 
@@ -63,24 +64,20 @@
 
 		<header class="section-header">
 
-			<div class="section-base">
+			<div class="header-row-1">
 
-				<div class="header-row-1">
+				<div class="header-img">
+					<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+				</div>
 
-					<div class="header-img">
-						<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+				<div class="header-desc font-mochipy">
+					<div class="header-desc-col">
+						<p>Hello!</p>
+						<h1>We are Quarks!</h1>
+						<h2 class="font-noto">A transgender community<br>located in Hong Kong!</h2>
 					</div>
-
-					<div class="header-desc font-mochipy">
-						<div class="header-desc-col">
-							<p>Hello!</p>
-							<h1>We are Quarks!</h1>
-							<h2 class="font-noto">A transgender community<br>located in Hong Kong!</h2>
-						</div>
-						<a href="{{site.baseurl}}/en/en-subpages/about/about.html" class="font-outfit break-letter header-btn-desktop">What is Transgender? </a>
-						<a href="{{site.baseurl}}/en/en-subpages/about/about.html" class="font-outfit break-letter header-btn-mobile">Transgender? </a>
-					</div>
-
+					<a href="{{site.baseurl}}/en/en-subpages/about/about.html" class="font-outfit break-letter header-btn-desktop">What is Transgender? </a>
+					<a href="{{site.baseurl}}/en/en-subpages/about/about.html" class="font-outfit break-letter header-btn-mobile">Transgender? </a>
 				</div>
 
 			</div>
@@ -99,39 +96,36 @@
 				<div class="font-outfit"><p>Here at Quarks, </p><h2>Our mission</h2><p> is to...</p></div>
 				{%include divider-1.html%}
 			</div>
-			<div class="section-base">
 
-				<div class="about-fields-c">
-					<div class="about-fields">
-						<div class="about-img">
-							{%include icon-connect.html%}
-						</div>
-						<div class="a-fields-desc">
-							<h3 class="font-outfit">Connect with the Community</h3>
-							<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
-						</div>
+			<div class="about-fields-c">
+				<div class="about-fields">
+					<div class="about-img">
+						{%include icon-connect.html%}
 					</div>
-
-					<div class="about-fields">
-						<div class="about-img">
-							{%include icon-visibility.html%}
-						</div>
-						<div class="a-fields-desc">
-							<h3 class="font-outfit">Promote Visibility</h3>
-							<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
-						</div>
+					<div class="a-fields-desc">
+						<h3 class="font-outfit">Connect with the Community</h3>
+						<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
 					</div>
+				</div>
 
-					<div class="about-fields">
-						<div class="about-img">
-							{%include icon-resource.html%}
-						</div>
-						<div class="a-fields-desc">
-							<h3 class="font-outfit">Provide Resources</h3>
-							<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
-						</div>
+				<div class="about-fields">
+					<div class="about-img">
+						{%include icon-visibility.html%}
 					</div>
+					<div class="a-fields-desc">
+						<h3 class="font-outfit">Promote Visibility</h3>
+						<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
+					</div>
+				</div>
 
+				<div class="about-fields">
+					<div class="about-img">
+						{%include icon-resource.html%}
+					</div>
+					<div class="a-fields-desc">
+						<h3 class="font-outfit">Provide Resources</h3>
+						<p class="break-letter">Field Description Description Lorem Ipsum Lorem Ipsum Wow</p>
+					</div>
 				</div>
 			</div>
 
@@ -156,7 +150,7 @@
 			</div>
 		</section>
 
-		<section class="section-news section-base">
+		<section class="section-news">
 			<div class="news-intro">
 				<h2 class="font-outfit">News</h2>
 				<p>Lorem Ipsum placeholder text</p>
@@ -182,9 +176,7 @@
 
 					{%include divider-1.html%}
 
-					<p class="n-det-content">
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.
-					</p>
+					<p class="n-det-content lorem"></p>
 
 					{%include divider-1.html%}
 				</div>
@@ -196,15 +188,55 @@
 						<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
 					</div>
 
-					<div class="n-gallery-selector">
+					<div class="n-gallery-selector font-outfit">
 						<button>&#12296;</button>
-						<h6>Event 1/n</h6>
-						<p>Click to preview the images</p>
+						<h6>Event 1</h6>
 						<button>&#12297;</button>
+					</div>
+
+					<div class="n-gallery-selector font-outfit">
+						<p>Click to preview the images!</p>
 					</div>
 				</div>
 			</div>
 
+		</section>
+
+		<section class="section-events">
+			<div class="evt-intro font-outfit">
+				<h2>Previous Events</h2>
+				<p>Click to learn more!</p>
+			</div>
+
+			<div class="evt-cards-c">
+				<div class="evt-cards font-outfit">
+					<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+					<h6>Event 1</h6>
+					<p class="lorem"></p>
+					<div class="evt-cards-expand"></div>
+				</div>
+
+				<div class="evt-cards font-outfit">
+					<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+					<h6>Event 2</h6>
+					<p class="lorem"></p>
+					<div class="evt-cards-expand"></div>
+				</div>
+
+				<div class="evt-cards font-outfit">
+					<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+					<h6>Event 3</h6>
+					<p class="lorem"></p>
+					<div class="evt-cards-expand"></div>
+				</div>
+				
+				<div class="evt-cards font-outfit">
+					<img src="{{site.baseurl}}/cm-images/placeholder.svg" loading="lazy">
+					<h6>Event 4</h6>
+					<p class="lorem"></p>
+					<div class="evt-cards-expand"></div>
+				</div>
+			</div>
 		</section>
 
 		{%include en-quote.html%}
@@ -215,6 +247,13 @@
 			document.querySelectorAll('.break-letter').forEach(function(el) {
 			el.innerHTML = el.textContent.replace(/(\w{3})/g, '$1&shy;');
 			});
+		</script>
+
+		<script src="{{site.baseurl}}/cm-scripts/lorem.js"></script>
+
+		<script defer>
+			const newParagraph = loremIpsum();
+			$('.lorem').append(newParagraph);
 		</script>
 	</body>
 </html>

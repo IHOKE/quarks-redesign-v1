@@ -5,6 +5,7 @@
 	transition: all 0.1s ease-in-out;
 	--col-beige-white: #FFFBF0;
 	--col-royal-blue: #496A8A;
+	--col-baby-blue: #B5E9F2;
 	--col-choc-brown: #633D34;
 	--col-pastel-pink: #FFCCC2;
 	--col-hot-pink: #FF6677;
@@ -35,13 +36,6 @@
 body{
 	background-color: var(--col-pastel-pink);
 	overflow-x: hidden;
-}
-
-.section-base {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 10vw;
 }
 
 .button-side {
