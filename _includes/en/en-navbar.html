@@ -8,9 +8,10 @@
 		
 	<ul class="nav-m-links">
 		<a href="{{site.baseurl}}/en//en-subpages/about/about.html"><li>About <span>Us</span></li></a>
-		<a href="{{site.baseurl}}/en/en-subpages/student/student.hmtl"><li>Students</li></a>
+		<a href="{{site.baseurl}}/en/en-subpages/student/student.html"><li>Students</li></a>
 		<a href="{{site.baseurl}}/en/en-subpages/healthcare/healthcare.html"><li>Healthcare</li></a>
 		<a href="{{site.baseurl}}/en/en-subpages/law/law.html"><li>Laws</li></a>
+		<a href="{{site.baseurl}}/en/en-subpages/support/support.html"><li>Support Us!</li></a>
 	</ul>
 
 	<div class="nav-m-misc">
@@ -38,9 +39,17 @@
 
 	<ul class="nav-s-links">
 		<a href="{{site.baseurl}}/en/en-subpages/about/about.html"><li>About Us</li></a>
-		<a href="{{site.baseurl}}/en/en-subpages/student/student.hmtl"><li>Students</li></a>
+		<a href="{{site.baseurl}}/en/en-subpages/student/student.html"><li>Students</li></a>
 		<a href="{{site.baseurl}}/en/en-subpages/healthcare/healthcare.html"><li>Healthcare</li></a>
 		<a href="{{site.baseurl}}/en/en-subpages/law/law.html"><li>Laws</li></a>
+		<a href="{{site.baseurl}}/en/en-subpages/support/support.html"><li>Support Us!</li></a>
 	</ul>
-
 </nav>
+
+<!-- NavSide Script -->
+<script defer>
+	function toggleNavSide() {
+		document.querySelector('.button-side').classList.toggle('active');
+		document.querySelector('.nav-side').classList.toggle('active');
+	}
+</script>

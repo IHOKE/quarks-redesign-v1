@@ -3,64 +3,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<meta charset="UTF-8">
-		<title>跨青時刻 Quarks</title>
-		<meta name="description" content="跨青時刻是一個由香港跨性別青年領導的社區組織!致力於提升跨性別青年的權益和福祉。Quarks is a Hong Kong transgender leaded community for transgender youths!">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="alternate" hreflang="en-US" href="{{site.baseurl}}/en/index.html"/>
-		<link rel="alternate" hreflang="zh-HK" href="{{site.baseurl}}/zh/index.html"/>
-		<link rel="alternate" hreflang="x-default" href="{{site.baseurl}}/index.html" />
+		{%include head.html%}
 
 		{%include favicon.html%}
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-		<!-- Google fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-		<!-- CSS Stylesheets -->
-		<link rel="stylesheet" href="{{site.baseurl}}/en/en-styles/en-common.css">
 		<link rel="stylesheet" href="{{site.baseurl}}/en/en-styles/en-index.css">
-
-		<style>
-			@font-face { font-family: 'Gadugi';
-				src: url('{{site.baseurl}}/fonts/gadugi.ttf') format('truetype');
-			}
-
-			@font-face { font-family: 'Gadugi Bold';
-				src: url('{{site.baseurl}}/fonts/gadugib.ttf') format('truetype');
-				font-weight: bold;
-			}
-
-			@font-face { font-family: "Mochipy";
-				src: url("{{site.baseurl}}/fonts/MOCHIYPOPONE-REGULAR.TTF") format("truetype");
-			}
-
-			@font-face {font-family: 'Sitka';
-				src: url("{{site.baseurl}}/fonts/SITKAVF.TTF") format("truetype");
-			}
-		</style>
 	</head>
 
 	<body class="lang-en">
 
-		<!-- CDN -->
-		<script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+		{%include body-cdn.html%}
 
-		{%include en-navbar.html%}
-
-		<!-- NavSide Script -->
-		<script defer>
-			function toggleNavSide() {
-				document.querySelector('.button-side').classList.toggle('active');
-				document.querySelector('.nav-side').classList.toggle('active');
-			}
-		</script>
+		{%include en/en-navbar.html%}
 
 		<header class="section-header">
 
@@ -100,7 +54,7 @@
 			<div class="about-fields-c">
 				<div class="about-fields">
 					<div class="about-img">
-						{%include icon-connect.html%}
+						{%include icon/icon-connect.html%}
 					</div>
 					<div class="a-fields-desc">
 						<h3 class="font-outfit">Connect with the Community</h3>
@@ -110,7 +64,7 @@
 
 				<div class="about-fields">
 					<div class="about-img">
-						{%include icon-visibility.html%}
+						{%include icon/icon-visibility.html%}
 					</div>
 					<div class="a-fields-desc">
 						<h3 class="font-outfit">Promote Visibility</h3>
@@ -120,7 +74,7 @@
 
 				<div class="about-fields">
 					<div class="about-img">
-						{%include icon-resource.html%}
+						{%include icon/icon-resource.html%}
 					</div>
 					<div class="a-fields-desc">
 						<h3 class="font-outfit">Provide Resources</h3>
@@ -136,15 +90,15 @@
 
 				<div class="a-platforms-desc">
 					<a href="https://www.instagram.com/quarkshk/">
-						{%include icon-instagram.html%}
+						{%include icon/icon-instagram.html%}
 					</a>
 
 					<a href="https://www.youtube.com/@quarkshk">
-						{%include icon-youtube.html%}
+						{%include icon/icon-youtube.html%}
 					</a>
 
 					<a href="https://www.facebook.com/quarkshk/?locale=zh_HK">
-						{%include icon-facebook.html%}
+						{%include icon/icon-facebook.html%}
 					</a>
 				</div>
 			</div>
@@ -239,21 +193,10 @@
 			</div>
 		</section>
 
-		{%include en-quote.html%}
+		{%include en/en-quote.html%}
 
-		{%include en-footer.html%}
+		{%include en/en-footer.html%}
 
-		<script defer>
-			document.querySelectorAll('.break-letter').forEach(function(el) {
-			el.innerHTML = el.textContent.replace(/(\w{3})/g, '$1&shy;');
-			});
-		</script>
-
-		<script src="{{site.baseurl}}/cm-scripts/lorem.js"></script>
-
-		<script defer>
-			const newParagraph = loremIpsum();
-			$('.lorem').append(newParagraph);
-		</script>
+		{%include js-helpers.html%}
 	</body>
 </html>

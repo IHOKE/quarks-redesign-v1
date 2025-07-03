@@ -1,0 +1,220 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		{%include head.html%}
+
+		{%include favicon.html%}
+
+		<link rel="stylesheet" href="{{site.baseurl}}/en/en-styles/en-healthcare.css">
+	</head>
+
+	<body class="lang-en">
+		{%include body-cdn.html%}
+
+		{%include en/en-navbar.html%}
+
+		<header class="font-mochipy">
+			<h1>Healthcare</h1>
+		</header>
+
+		<section class="section-compare">
+			<h2 class="font-outfit">Different Routes!</h2>
+			<p>To start your transition, you can choose the <b>Government</b>, the <b>Private</b> or the <b>- - -</b> route!</p>
+
+			<div class="compare-card-c">
+				<div class="compare-card">
+					<div class="compare-card-header">
+						<img src="{{site.baseurl}}/cm-images/icon/icon-ha.svg" alt="Government Hospitals" loading="lazy">
+						<h3 class="font-outfit">Government<br>Hospitals</h3>
+					</div>
+					<div class="compare-card-body">
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-cost.svg" alt="Cost" loading="lazy">
+								<h6 class="font-outfit">Affordable</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>135 HKD for the first appointment, 80 HKD for follow up appointments</p>
+							<p>Medication can cost 30~500 HKD depending on the amount</p>
+						</div>
+
+						<hr>
+
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-time.svg" alt="Time" loading="lazy">
+								<h6 class="font-outfit">Slow</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>Waiting time for the 1st appointment is usually <b>at least</b> 1 year</p>
+							<p>Depending on specific cases, follow-up appointments may usually take anywhere between 6-12 months</p>
+							<p>HRT waiting time can be anywhere between 1-5 years (as of 2025)</p>
+						</div>
+
+						<hr>
+
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-eligibility.svg" alt="Eligibility" loading="lazy">
+								<h6 class="font-outfit">HK Residents Only</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>This service is currently serving Hong Kong Permanant Residents Only</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="compare-card">
+					<div class="compare-card-header">
+						<img src="{{site.baseurl}}/cm-images/placeholder.svg" alt="Private Hospitals" loading="lazy">
+						<h3 class="font-outfit">- - -</h3>
+					</div>
+					<div class="compare-card-body">
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-cost.svg" alt="Cost" loading="lazy">
+								<h6 class="font-outfit">Placeholder</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>Appointment Info</p>
+							<p>Medication Info</p>
+						</div>
+
+						<hr>
+
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-time.svg" alt="Time" loading="lazy">
+								<h6 class="font-outfit">Placeholder</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>First Appointment Info</p>
+							<p>Follow Up Appointment Info</p>
+							<p>HRT Info</p>
+						</div>
+
+						<hr>
+
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-eligibility.svg" alt="Eligibility" loading="lazy">
+								<h6 class="font-outfit">Placeholder</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>Eligibility Info</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="compare-card">
+					<div class="compare-card-header">
+						<img src="{{site.baseurl}}/cm-images/icon/icon-hkpha.svg" alt="Private Hospitals" loading="lazy">
+						<h3 class="font-outfit">Private<br>Hospitals</h3>
+					</div>
+					<div class="compare-card-body">
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-cost.svg" alt="Cost" loading="lazy">
+								<h6 class="font-outfit">Expensive</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>Appointment Info</p>
+							<p>Medication Info</p>
+						</div>
+
+						<hr>
+
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-time.svg" alt="Time" loading="lazy">
+								<h6 class="font-outfit">Fast</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>First Appointment Info</p>
+							<p>Follow Up Appointment Info</p>
+							<p>HRT Info</p>
+						</div>
+
+						<hr>
+
+						<div class="c-card-row" onclick="toggleCardRow(this)">
+							<div>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-eligibility.svg" alt="Eligibility" loading="lazy">
+								<h6 class="font-outfit">Anyone</h6>
+								<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="c-card-arrow">
+							</div>
+							<p>Eligibility Info</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				function toggleCardRow(row) {
+					row.classList.toggle('active');
+					// Find the arrow inside the first child div
+					const arrow = row.querySelector('.c-card-arrow');
+					if (arrow) {
+						arrow.classList.toggle('active');
+					}
+					const isActive = row.classList.contains('active');
+					if (isActive) {
+						row.style.height = row.scrollHeight + 10 + "px";
+					} else {
+						row.style.height = "50px";
+					}
+				}
+			</script>
+
+			<p>In this page, we will briefly introduce you to the procedures required in these routes, so you can better determine which suits you the best!</p>
+		</section>
+
+		<section class="section-btn-radio font-outfit">
+			<div>
+				<button><img src="{{site.baseurl}}/cm-images/icon/icon-ha.svg" loading="lazy">Government<br>Hospitals</button>
+				<button>- - -</button>
+				<button><img src="{{site.baseurl}}/cm-images/icon/icon-hkpha.svg" loading="lazy">Private<br>Hospitals</button>
+			</div>
+		</section>
+
+		<section class="section-gov">
+			<div class="step">
+				<div class="step-header font-outfit">
+					<p class="step-no step-start">1</p>
+					<h2 class="step-title">Get a referal letter from a<br>General Practitioner</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
+				</div>
+				<div class="step-desc">
+					<p class="lorem">here</p>
+				</div>
+			</div>
+
+			<div class="step">
+				<div class="step-header">
+					<p class="step-no">2</p>
+					<h2 class="step-title">Get a referal letter from a general practitioner</h2>
+					<span></span>
+				</div>
+				<div class="step-desc">
+					<p class="lorem">here</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-private">
+		</section>
+
+		<section class="section-smth">
+			Placeholder for the other method
+		</section>
+
+		{%include en/en-quote.html%}
+
+		{%include en/en-footer.html%}
+
+		{%include js-helpers.html%}
+	
+	</body>
+</html>

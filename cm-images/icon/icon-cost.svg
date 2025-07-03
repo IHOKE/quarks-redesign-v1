@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="assets" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #633d34;
+      }
+
+      .cls-2 {
+        font-family: Gadugi, Gadugi;
+        font-size: 102.69px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(72.32 134.2)"><tspan x="0" y="0">$</tspan></text>
+  <path class="cls-1" d="m100,37.62c34.4,0,62.38,27.99,62.38,62.38s-27.99,62.38-62.38,62.38-62.38-27.99-62.38-62.38,27.99-62.38,62.38-62.38m0-8.54c-39.17,0-70.92,31.75-70.92,70.92s31.75,70.92,70.92,70.92,70.92-31.75,70.92-70.92S139.17,29.08,100,29.08h0Z"/>
+</svg>

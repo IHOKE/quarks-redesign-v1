@@ -1,0 +1,12 @@
+		<script defer>
+			document.querySelectorAll('.break-letter').forEach(function(el) {
+			el.innerHTML = el.textContent.replace(/(\w{3})/g, '$1&shy;');
+			});
+		</script>
+
+		<script src="{{site.baseurl}}/cm-scripts/lorem.js"></script>
+
+		<script defer>
+			const newParagraph = loremIpsum();
+			$('.lorem').append(newParagraph);
+		</script>
