@@ -6,10 +6,191 @@
 		{%include head.html%}
 
 		{%include favicon.html%}
+
+		<link rel="stylesheet" href="{{site.baseurl}}/en/en-styles/en-law.css">
 	</head>
 
-	<body>
+	<body class="lang-en">
 		{%include body-cdn.html%}
+
+		{%include en/en-navbar.html%}
+
+		<header class="font-mochipy">
+			<h1>Laws</h1>
+		</header>
+
+		<section class="section-intro font-mochipy">
+			<h2>Changing HKID Gender Marker</h2>
+		</section>
+
+		<div class="section-HKID">
+			<section class="HKID-intro font-outfit">
+				{%include icon/icon-exclam.html%}
+				<p>On 2024 April, Hong Kong Immigration Department had stated:</p>
+				<p><i>This is a non-official translation from Chinese original</i></p>
+
+				<h6>Changing the HKID Gender Marker does not reflect changes on legal gender</h6>
+				<p>Updating the gender marker on the HKID card does <b>NOT</b> update one's legal gender. According to IMMD <a href="https://www.immd.gov.hk/pdf/the-guideline-en.pdf">"Guideline on the application for change of sex entry on Hong Kong identity card"</a>
+				The gender marker on the HKID card does not imply / represent that the holder has legally changed their gender, and is not formally recognized for all legal purposes.</p>
+
+				<h6>Marriage Registration</h6>
+				<p>After the 2013 W v Registrar of Marriages judicial review victory, transgender individuals who have undergone Sex Reassignment Surgery (SRS) can be recognized for marriage registration.
+					For example, a transgender man whose gender marker on the HKID card is updated to Male according to Criterion 1 can marry a woman; however, if they had updated their gender marker with accordance to Criterion 2 or 3, they would still be unable to marry a woman.</p>
+			</section>
+
+			<section class="HKID-diagram font-outfit">
+				<div class="HKID-d-c">
+
+					<div class="HKID-d-row">
+						<div class="HKID-d-col-header">
+							<!-- Top Left -->
+						</div>
+						<div class="HKID-d-col">
+							<h3>To Male</h3>
+							<img src="{{site.baseurl}}/cm-images/icon/icon-male.svg" loading="lazy">
+						</div>
+
+						<div class="HKID-d-col">
+							<h3>To Female</h3>
+							<img src="{{site.baseurl}}/cm-images/icon/icon-female.svg" loading="lazy">
+						</div>
+
+						<div class="HKID-d-col">
+							<h3>To Non-Binary</h3>
+							<img src="{{site.baseurl}}/cm-images/icon/icon-non-bin.svg" loading="lazy">
+						</div>
+					</div>
+
+					<!-- Criterion 1 -->
+					<div class="HKID-d-row">
+						<div class="HKID-d-col-header">
+							<h3>Criterion 1</h3>
+						</div>
+						<div class="HKID-d-col">
+							<div class="HKID-d-row-s">
+								<div class="HKID-d-col-s d-male">
+									<p>Removal of Uterus and Ovaries</p>
+								</div>
+								<div class="HKID-d-col-s d-female">
+									<p>Construction of a Vagina</p>
+								</div>
+							</div>
+							<div class="HKID-d-row-s">
+								<div class="HKID-d-col-s d-male">
+									<p>Full / Partial Construction of a penis</p>
+								</div>
+								<div class="HKID-d-col-s d-female">
+									<p>Removal of Testes and Penis</p>
+								</div>
+							</div>
+						</div>
+						<div class="HKID-d-col">
+							<!-- NB -->
+						</div>
+					</div>
+
+					<!-- Criterion 2 -->
+					<div class="HKID-d-row">
+						<div class="HKID-d-col-header">
+							<h3>Criterion 1</h3>
+						</div>
+						<div class="HKID-d-col">
+							<div class="HKID-d-row-s">
+								<div class="HKID-d-col-s d-male">
+									<p>Removal of Uterus and Ovaries</p>
+								</div>
+								<div class="HKID-d-col-s d-female">
+									<p>Construction of a Vagina</p>
+								</div>
+							</div>
+							<div class="HKID-d-row-s">
+								<div class="HKID-d-col-s d-male">
+									<p>Full / Partial Construction of a penis</p>
+								</div>
+								<div class="HKID-d-col-s d-female">
+									<p>Removal of Testes and Penis</p>
+								</div>
+							</div>
+						</div>
+						<div class="HKID-d-col">
+							<p></p>
+						</div>
+					</div>
+
+					<div class="HKID-d-row">
+						<div class="HKID-d-col">
+							<h3>Criterion 3</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<section class="section-private">
+			<div class="step" onclick="toggleStep(this)">
+				<span class="step-start-text font-outfit">Start!</span>
+				<div class="step-header font-outfit">
+					<p class="step-no step-start">1</p>
+					<h2 class="step-title">Private 1</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
+				</div>
+				<div class="step-desc">
+					<div class="step-desc-spacer"><span></span></div>
+					<p class="lorem">step 1 <br></p>
+				</div>
+			</div>
+
+			<div class="step" onclick="toggleStep(this)">
+				<div class="step-header font-outfit">
+					<p class="step-no">2</p>
+					<h2 class="step-title">Private 2</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
+				</div>
+				<div class="step-desc">
+					<div class="step-desc-spacer"><span></span></div>
+					<p class="lorem">step 2 <br></p>
+				</div>
+			</div>
+
+			<div class="step" onclick="toggleStep(this)">
+				<div class="step-header font-outfit">
+					<p class="step-no">3</p>
+					<h2 class="step-title">Private End</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
+				</div>
+				<div class="step-desc">
+					<div class="step-desc-spacer"></div>
+					<p class="">The End <br></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-smth">
+			Placeholder for the other route
+		</section>
+
+		<script>
+			function toggleStep(row) {
+				row.classList.toggle('active');
+				const arrow = row.querySelector('.step-arrow');
+				if (arrow) { arrow.classList.toggle('active'); }
+				const spacer = row.querySelector('.step-desc-spacer');
+				if (spacer) { spacer.classList.toggle('active'); }
+
+				const isActive = row.classList.contains('active');
+				if (isActive) {
+					row.style.height = row.scrollHeight + "px";
+				} else {
+					row.style.height = "85px";
+				}
+			}
+		</script>
+
+		{%include en/en-quote.html%}
+
+		{%include en/en-footer.html%}
+
+		{%include js-helpers.html%}
 	
 	</body>
 </html>

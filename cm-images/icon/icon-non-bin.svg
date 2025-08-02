@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="assets" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #633d34;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="100" cy="33.36" r="26.18"/>
+  <polygon class="cls-1" points="140.89 77.15 140.89 77.15 59.11 77.15 59.11 77.15 79.55 134.98 59.11 192.81 59.11 192.82 140.89 192.82 140.89 192.81 120.45 134.98 140.89 77.15"/>
+</svg>

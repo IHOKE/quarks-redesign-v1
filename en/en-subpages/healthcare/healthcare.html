@@ -154,7 +154,6 @@
 			<script>
 				function toggleCardRow(row) {
 					row.classList.toggle('active');
-					// Find the arrow inside the first child div
 					const arrow = row.querySelector('.c-card-arrow');
 					if (arrow) {
 						arrow.classList.toggle('active');
@@ -180,35 +179,103 @@
 		</section>
 
 		<section class="section-gov">
-			<div class="step">
+			<div class="step" onclick="toggleStep(this)">
+				<span class="step-start-text font-outfit">Start!</span>
 				<div class="step-header font-outfit">
 					<p class="step-no step-start">1</p>
-					<h2 class="step-title">Get a referal letter from a<br>General Practitioner</h2>
+					<h2 class="step-title">Get a referal letter from a General Practitioner</h2>
 					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
 				</div>
 				<div class="step-desc">
-					<p class="lorem">here</p>
+					<div class="step-desc-spacer"><span></span></div>
+					<p class="lorem">step 1 <br></p>
 				</div>
 			</div>
 
-			<div class="step">
-				<div class="step-header">
+			<div class="step" onclick="toggleStep(this)">
+				<div class="step-header font-outfit">
 					<p class="step-no">2</p>
-					<h2 class="step-title">Get a referal letter from a general practitioner</h2>
-					<span></span>
+					<h2 class="step-title">Submit the referal letter to the GIC Clinic</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
 				</div>
 				<div class="step-desc">
-					<p class="lorem">here</p>
+					<div class="step-desc-spacer"><span></span></div>
+					<p class="lorem">step 2 <br></p>
+				</div>
+			</div>
+
+			<div class="step" onclick="toggleStep(this)">
+				<div class="step-header font-outfit">
+					<p class="step-no">3</p>
+					<h2 class="step-title">End</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
+				</div>
+				<div class="step-desc">
+					<div class="step-desc-spacer"></div>
+					<p class="">The End <br></p>
 				</div>
 			</div>
 		</section>
 
 		<section class="section-private">
+			<div class="step" onclick="toggleStep(this)">
+				<span class="step-start-text font-outfit">Start!</span>
+				<div class="step-header font-outfit">
+					<p class="step-no step-start">1</p>
+					<h2 class="step-title">Private 1</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
+				</div>
+				<div class="step-desc">
+					<div class="step-desc-spacer"><span></span></div>
+					<p class="lorem">step 1 <br></p>
+				</div>
+			</div>
+
+			<div class="step" onclick="toggleStep(this)">
+				<div class="step-header font-outfit">
+					<p class="step-no">2</p>
+					<h2 class="step-title">Private 2</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
+				</div>
+				<div class="step-desc">
+					<div class="step-desc-spacer"><span></span></div>
+					<p class="lorem">step 2 <br></p>
+				</div>
+			</div>
+
+			<div class="step" onclick="toggleStep(this)">
+				<div class="step-header font-outfit">
+					<p class="step-no">3</p>
+					<h2 class="step-title">Private End</h2>
+					<img src="{{site.baseurl}}/cm-images/icon/icon-arrow.svg" alt="Arrow" loading="lazy" class="step-arrow">
+				</div>
+				<div class="step-desc">
+					<div class="step-desc-spacer"></div>
+					<p class="">The End <br></p>
+				</div>
+			</div>
 		</section>
 
 		<section class="section-smth">
-			Placeholder for the other method
+			Placeholder for the other route
 		</section>
+
+		<script>
+			function toggleStep(row) {
+				row.classList.toggle('active');
+				const arrow = row.querySelector('.step-arrow');
+				if (arrow) { arrow.classList.toggle('active'); }
+				const spacer = row.querySelector('.step-desc-spacer');
+				if (spacer) { spacer.classList.toggle('active'); }
+
+				const isActive = row.classList.contains('active');
+				if (isActive) {
+					row.style.height = row.scrollHeight + "px";
+				} else {
+					row.style.height = "85px";
+				}
+			}
+		</script>
 
 		{%include en/en-quote.html%}
 
